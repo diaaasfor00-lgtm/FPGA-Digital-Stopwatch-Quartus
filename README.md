@@ -3,6 +3,12 @@
 A hardware-level **Up/Down Digital Stopwatch** implemented on the **Altera/Intel DE0 FPGA** development board using **Intel Quartus Prime**. The design combines hierarchical Block Diagram Files (`.bdf`), Library of Parameterized Modules (LPM), and **VHDL** components.
 
 ## Key Features
+## Live Hardware Demo
+Watch the stopwatch running on the physical **Altera DE0 FPGA** board, demonstrating centisecond counting, bidirectional (Up/Down) switching, and debounced pushbutton controls:
+
+[![FPGA Digital Stopwatch Demo](https://img.youtube.com/vi/zlEoXrl2qmg/0.jpg)](https://youtu.be/zlEoXrl2qmg)
+
+> **Direct Video Link:** [https://youtu.be/zlEoXrl2qmg](https://youtu.be/zlEoXrl2qmg)
 - **100 Hz Precision Timing:** Divides the onboard 50 MHz clock (`CLK_50`) down to 10 ms ticks (`100 Hz`) for accurate centisecond tracking.
 - **Bidirectional Counting:** Supports both count-up and count-down modes with Terminal Count (`TC`) carry/borrow generation.
 - **Hardware Debouncing:** Integrates a custom VHDL key-debouncer (`clean_key.vhd`) configured for a 10 ms bounce window.
